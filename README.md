@@ -1,5 +1,5 @@
 # Golden React Template
-One of the most entertaining parts of the Pokemon anime was when the "Who's that Pokemon?" segment came across the screen during commercial breaks. Were you the kid who knew every Pokemon when this segment aired, or did you have to wait for the Pokemon's identity to be revealed? If we had to guess, it's probably the latter, but prove us wrong by acing this quiz.
+This project is a base template for a project in React, where it has all the settings for two environments: development and production, it has bundle optimization and code revision.
 
 # Screen Shot
 
