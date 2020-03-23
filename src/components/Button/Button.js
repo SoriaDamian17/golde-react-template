@@ -5,7 +5,8 @@ import './Button.scss';
 
 const Button = (props) => {
 
-    const styleClass = 'button button--' + props.variant;
+    const type = props.outline ? 'outline--' : 'button--';
+    const styleClass = 'button '+ type + props.variant;
 
     function handleClick() {
         if (props.href) {
