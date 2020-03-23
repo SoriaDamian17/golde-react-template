@@ -1,11 +1,15 @@
 import React from 'react';
 import Layout from '../components/Layout';
 
+import '../styles/home.scss';
+
 export default () => {
 
     return (
         <Layout title="Home">
-            <h1>Hi Pokemon</h1>
+            <div className="main-container">
+
+            </div>
         </Layout>
     )
 }

@@ -1,2 +1,27 @@
 .layout {
 }
+
+.main-header {
+    background-color: #222222;
+    text-align: center;
+    color: #ffffff;
+    position: fixed;
+    padding: 20px 5px;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.title {
+    color: #61dafb;
+    font-size: 45px;
+}
+
+.subtitle {
+    padding-top: 15px;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    font-weight: 200;
+}
