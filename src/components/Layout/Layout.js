@@ -15,7 +15,7 @@ const Layout = (props) => {
             <div className="main-header">
                 <Logo width={250} height={250}/>
                 <h1 className="title">React Template</h1>
-                <p className="subtitle">A JavaScript library for building user interfaces</p>
+                <p className="subtitle p-1">A JavaScript library for building user interfaces</p>
                 <Button title="Learn React" href="https://reactjs.org/docs/getting-started.html"/>
             </div>
             {props.children}

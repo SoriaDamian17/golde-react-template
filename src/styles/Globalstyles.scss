@@ -38,8 +38,18 @@ p {
     font-weight: 300;
 }
 
-.p-5 {
-	padding: 3rem!important;
+.mt-5 {
+	margin-top: 15px;
+}
+
+.col-md-4 {
+	max-width: 33.333333%!important;
+}
+
+@media(min-width: 760px) {
+	.p-5 {
+		padding: 3rem;
+	}
 }
 
 .highlight {

@@ -10,7 +10,7 @@ export default () => {
     return (
         <Layout title="Home">
             <div className="main-container">
-                <div className="col-xs-3 col-md-4 p-5">
+                <div className="col-md-4 mt-5 p-5">
                     <h2>Installation</h2>
                     <p>
                         You can follow the next steps to install the template:
@@ -30,17 +30,16 @@ export default () => {
                             </ul>
                         </figure>
                     </p>
-                    <br/>
                     <Button title="Github" href="https://github.com/SoriaDamian17/golde-react-template" outline="true" />
                 </div>
-                <div className="col-xs-3 col-md-4 p-5">
+                <div className="col-md-4 mt-5 p-5">
                     <h2>Optimization</h2>
                     <p>
                         This project is a base template for a project in React, where it has all the settings for two environments: 
                         development and production, it has bundle optimization and code revision.
                     </p>
                 </div>
-                <div className="col-xs-3 col-md-4 p-5">
+                <div className="col-md-4 mt-5 p-5">
                     <h2>Migration Next.js</h2>
                     <p>
                         This template is intended to make it easier for you to migrate to the Next.js framework using the page path.
