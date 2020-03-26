@@ -4,7 +4,9 @@ import Layout from '../components/Layout';
 export default () => {
     return (
         <Layout title="Not Found">
-            <h1>Not found</h1>
+            <div className="main-container">
+                <h2>Not Found</h2>
+            </div>
         </Layout>
     )
 }
