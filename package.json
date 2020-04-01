@@ -7,7 +7,7 @@
     "build": "webpack -p --env.ANALYZER=disabled --config ./config/webpack.prod.config.js",
     "build:dev": "webpack --env.ANALYZER=server --config ./config/webpack.config.js",
     "build:dll": "webpack --config ./config/webpack.dll.config.js",
-    "start": "webpack-dev-server -w --env.ANALYZER=server --hot --history-api-fallback --port 3000 --config ./config/webpack.config.js",
+    "start": "webpack-dev-server -w --env.ANALYZER=server --hot --port 3000 --config ./config/webpack.config.js",
     "test": ""
   },
   "repository": {

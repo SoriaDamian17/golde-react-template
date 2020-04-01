@@ -14,6 +14,7 @@ module.exports = (env) => {
         },
         devtool: 'inline-source-map',
         devServer: {
+            host: '0.0.0.0',
             hot: true,
             port: 3000,
             historyApiFallback: true,

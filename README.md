@@ -17,4 +17,15 @@ This project is a base template for a project in React, where it has all the set
 - npm run start
 - Go to: http://localhost:3000
 
+## Deploy your application in Docker
+Lets build the docker image we just created. Make sure you are in the project root directory in your terminal and run the following command
+
+ docker build . -t react-docker
+
+## Lets run container now
+
+docker run -p 8000:80 react-docker
+
+Now open http://localhost:8000 in your browser to check its running !
+
 # Credits
