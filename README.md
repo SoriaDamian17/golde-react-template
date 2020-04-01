@@ -34,6 +34,13 @@ $ docker run -p 8000:80 react-docker
 
 Now open http://localhost:8000 in your browser to check its running !
 
+## Deploy with Now
+To deploy your project run this command
+
+```bash
+$ now
+```
+
 # Credits
 
 ## License
