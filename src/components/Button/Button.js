@@ -5,8 +5,8 @@ import './Button.scss';
 
 const Button = (props) => {
 
-    const type = props.outline ? 'outline--' : 'button--';
-    const styleClass = 'button '+ type + props.variant;
+    const { outline, variant, title, type } = props;
+    const btnType = outline ? 'outline--' : 'button--';
 
     function handleClick() {
         if (props.href) {
@@ -15,20 +15,22 @@ const Button = (props) => {
     }
 
     return (
-        <button type={props.type} className={styleClass} onClick={() => handleClick()}>
-            {props.title}
+        <button type={type} className={`button ${btnType + variant}`} onClick={() => handleClick()}>
+            {title}
         </button>
-    )
-}
+    );
+};
 
 Button.defaultProps = {
+    title: 'Text',
     variant: 'primary',
     type: 'button',
+    outline: false,
     size: 'sm',
     href: ''
 };
 
-Button.PropTypes = {
+Button.propTypes = {
     title: PropTypes.string,
     /**
      * One or more button variant combinations
@@ -58,6 +60,6 @@ Button.PropTypes = {
      * @default 'button'
      */
     type: PropTypes.oneOf(['button', 'reset', 'submit', null]),
-}
+};
 
 export default React.memo(Button);

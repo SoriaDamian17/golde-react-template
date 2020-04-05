@@ -1,13 +1,13 @@
-import * as React from "react"
+import * as React from "react";
 
 function SvgComponent(props) {
+  const { width, height } = props;
   return (
     <svg
       id="prefix__Layer_2"
       viewBox="0 0 3618.6 3618.6"
-      width={props.width}
-      height={props.height}
-      {...props}
+      width={width}
+      height={height}
     >
       <style>
         {
@@ -29,8 +29,8 @@ function SvgComponent(props) {
         d="M1271.5 2119.8c-203.5-351.6-342.1-707.4-399.9-1002.7-69.6-355.8-20.4-627.9 119.8-709 146.1-84.6 422.5 13.5 712.5 271 219.3 194.7 444.4 487.5 637.6 821.3 198.1 342.2 346.6 688.8 404.3 980.5 73.1 369.2 13.9 651.3-129.4 734.2-139.1 80.5-393.5-4.7-664.9-238.2-229.2-197.3-474.5-502.1-680-857.1z"
       />
     </svg>
-  )
-}
+  );
+};
 
-const MemoSvgComponent = React.memo(SvgComponent)
-export default MemoSvgComponent
+const MemoSvgComponent = React.memo(SvgComponent);
+export default MemoSvgComponent;
