@@ -7,7 +7,6 @@
     "build": "webpack -p --env.ANALYZER=disabled --config ./config/webpack.prod.config.js",
     "build:dev": "webpack --env.ANALYZER=server --config ./config/webpack.config.js",
     "build:dll": "webpack --config ./config/webpack.dll.config.js",
-    "precommit": "NODE_ENV=production lint-staged",
     "start": "webpack-dev-server -w --env.ANALYZER=server --hot --port 3000 --config ./config/webpack.config.js",
     "lint": "eslint src",
     "test": ""
@@ -63,5 +62,18 @@
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "eslint .", "git add"
+    ],
+    "src/**/*.scss": [
+      "stylelint --syntax scss", "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
