@@ -19,6 +19,13 @@ This project is a base template for a project in React, where it has all the set
 - Go to: http://localhost:3000
 ```
 
+## Run Linters
+You can manually run the stylelinter and eslinter but you have husky configured in githook with precommit to run when you commit.
+
+```bash
+$ npm run lint || npm run lint:scss
+```
+
 ## Deploy your application in Docker
 Lets build the docker image we just created. Make sure you are in the project root directory in your terminal and run the following command
 
