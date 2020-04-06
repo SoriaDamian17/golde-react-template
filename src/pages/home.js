@@ -20,9 +20,9 @@ export default () => {
                             <li>Download the project</li>
                             <li>cd golde-react-template</li>
                             <li>npm install</li>
-                            <li>npm install -g babel-cli (if you don't have Babel installed globally)</li>
-                            <li>npm install -g webpack-cli (if you don't have Webpack installed globally)</li>
-                            <li>npm install -g webpack (if you don't have Webpack installed globally)</li>
+                            <li>npm install -g babel-cli (if you don&apos;t have Babel installed globally)</li>
+                            <li>npm install -g webpack-cli (if you don&apos;t have Webpack installed globally)</li>
+                            <li>npm install -g webpack (if you don&apos;t have Webpack installed globally)</li>
                             <li>npm install webpack-bundle-analyzer --save-dev</li>
                             <li>npm install sass-loader mini-css-extract-plugin --save-dev</li>
                             <li>npm run build:dll</li>
@@ -47,5 +47,5 @@ export default () => {
                 </div>
             </div>
         </Layout>
-    )
-}
+    );
+};

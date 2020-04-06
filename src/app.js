@@ -1,5 +1,5 @@
-import React, {Suspense} from 'react';
-import {Router} from '@reach/router';
+import React, { Suspense } from 'react';
+import { Router } from '@reach/router';
 import './styles/Globalstyles.scss';
 
 const NotFound = React.lazy(() => import('./pages/not-found'));
@@ -13,4 +13,4 @@ export const App = () => (
             <Home path="/" />
         </Router>
     </Suspense>
-)
+);
