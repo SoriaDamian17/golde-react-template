@@ -26,6 +26,12 @@ You can manually run the stylelinter and eslinter but you have husky configured 
 $ npm run lint || npm run lint:scss
 ```
 
+you can omit the hook by adding the flag --no-verify
+
+```bash
+$ git commit -m "message" --no-verify
+```
+
 ## Deploy your application in Docker
 Lets build the docker image we just created. Make sure you are in the project root directory in your terminal and run the following command
 
