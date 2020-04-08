@@ -1,0 +1,84 @@
+{
+  "name": "golde-react-template",
+  "version": "1.3.0",
+  "description": "template in react",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -p --env.ANALYZER=disabled --config ./config/webpack.prod.config.js",
+    "build:dev": "webpack --env.ANALYZER=server --config ./config/webpack.config.js",
+    "build:dll": "webpack --config ./config/webpack.dll.config.js",
+    "start": "webpack-dev-server -w --env.ANALYZER=server --hot --port 3000 --config ./config/webpack.config.js",
+    "lint": "eslint src",
+    "lint:scss": "stylelint src/**/*.scss --fix",
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoriaDamian17/golde-react-template.git"
+  },
+  "keywords": [
+    "template",
+    "react",
+    "start"
+  ],
+  "author": "Soria Damian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SoriaDamian17/golde-react-template/issues"
+  },
+  "homepage": "https://github.com/SoriaDamian17/golde-react-template#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.0.6",
+    "brotli-webpack-plugin": "^1.1.0",
+    "compression-webpack-plugin": "^3.1.0",
+    "css-loader": "^3.4.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.19.0",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.1.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.1",
+    "prettier": "^2.0.2",
+    "pretty-quick": "^2.0.1",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.3",
+    "stylelint": "^13.3.0",
+    "stylelint-config-sass-guidelines": "^7.0.0",
+    "terser-webpack-plugin": "^2.3.5",
+    "webpack": "^4.40.2",
+    "webpack-bundle-analyzer": "^3.6.1",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1"
+  },
+  "dependencies": {
+    "@reach/router": "^1.3.3",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "eslint .",
+      "git add"
+    ],
+    "src/**/*.scss": [
+      "stylelint --syntax scss",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
